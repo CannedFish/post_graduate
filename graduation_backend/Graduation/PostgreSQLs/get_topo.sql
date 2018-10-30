@@ -1,0 +1,1 @@
+﻿SELECT id, ST_AsText(the_geom), len_km, x1, y1, x2, y2 FROM edges ORDER BY id

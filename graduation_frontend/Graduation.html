@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graduation</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-------------------lib---------------------->
+		<script type="text/javascript" src="lib/OpenLayers-2.12/OpenLayers.js"> </script>
+		<script type="text/javascript" src="lib/jquery/jquery-1.8.0.min.js"></script>
+		<!-------------------self defined---------------------->
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="js/MyWebSocket.js"></script>
+		<script type="text/javascript" src="js/Graduation.js"> </script>
+		<script type="text/javascript" src="js/MessageHandlers.js"></script>
+		<script type="text/javascript" src="js/Simulation.js"></script>
+    </head>
+	
+    <body onload="init()">
+		<div id="basicMap" style="width: 100%;height: 100%;"></div>
+		<div id="cover" class="hiddenCover"></div>
+		<input id="searchbox" class="seBox" type="text" onkeypress="findOneJunc(event)">
+		<div id="openSimu">
+			<div class="btn" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="btnOpenSimu()">Simulation</div>
+			<div class="btn" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="btnReplan()">Replan</div>
+		</div>
+		<div id="simuPanel">
+			<div id="simuStart" class="btn" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="btnStartSimu()">Start</div>
+			<div id="simuPause" class="btn" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="btnPauseSimu()">Pause</div>
+			<div id="simuResume" class="btn" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="btnResumeSimu()">Resume</div>
+			<div id="hideSimu" class="btn" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="btnHideSimu()">
+				<img src="img/layer-switcher-minimize.png">
+			</div>
+		</div>
+		<div id="routingManner">
+			<select id="mannerList">
+				<option value="distance">Distance Shortest</option>
+				<option value="time">Time Shortest</option>
+			</select>
+		</div>
+		<div id="scale"></div>
+		<div id="layerCtrl">
+			<div class="icon right" id="tmc" title="Open TMC">
+				<img class="full" src="img/tmc.png"/>
+			</div>
+			<div class="icon right" id="rp" title="Route Planning">
+				<img class="full" src="img/route-plan.png"/>
+			</div>
+		</div>
+		<div id="tmc-des">
+			<img class="full" src="img/des.png"/>
+		</div>
+    </body>
+</html>

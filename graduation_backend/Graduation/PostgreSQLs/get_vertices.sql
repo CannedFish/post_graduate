@@ -1,0 +1,1 @@
+﻿SELECT id, ST_AsText(the_geom) FROM edges_vertices_pgr

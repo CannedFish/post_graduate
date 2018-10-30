@@ -1,0 +1,168 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.olPopupContent {
+	overflow: visible !important;
+	padding: 0 !important;
+}
+.olPopup {
+	z-index: 1005 !important;
+}
+.olwidgetPopupContent {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 1.2em 1.2em 1.2em 1.2em;
+	box-shadow: 0 3px 14px rgba(0, 0, 0, 0.35);
+	overflow: auto;
+	padding: 10px 8px 8px;
+}
+.olwidgetPopupCloseBox {
+	background: url("img/popup_icons.png") no-repeat scroll -80px 0 #FFFFFF;
+	cursor: pointer;
+	height: 0;
+	overflow: hidden;
+	padding-top: 16px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 16px;
+}
+.olwidgetPopupCloseBox:hover {
+	background-position: -64px 0;
+}
+.olwidgetPopupStemTL,.olwidgetPopupStemTR {
+	-webkit-box-shadow: 0 0 10px 0 #AAAAAA;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: none repeat scroll 0 0 #FFFFFF;
+	z-index: 1;
+}
+
+.olwidgetPopupStemBL,.olwidgetPopupStemBR {
+	-webkit-box-shadow: 0 0 10px 0 #AAAAAA;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: none repeat scroll 0 0 #FFFFFF;
+	z-index: 1;
+}
+
+.hiddenCover {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 9999;
+}
+
+.showCover {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: #A9A9A9;
+	opacity: 0.5;
+	z-index: 9999;
+}
+
+.seBox {
+	position: absolute;
+	left: 5px;
+	bottom: 0px;
+	width: 120px;
+	z-index: 1010;
+}
+
+.btn {
+	background-color: #D3D3D3;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.icon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 20%;
+	margin: 5px;
+}
+
+.icon:hover {
+	width: 35px;
+	height: 35px;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
+}
+
+.right {
+	float: right;
+}
+
+#openSimu {
+	position: absolute;
+	left: 48%;
+	bottom: 0px;
+	z-index: 9999;
+	opacity: 0.8;
+	background-color: #D3D3D3;
+}
+
+#simuPanel {
+	position: absolute;
+	left: 40%;
+	bottom: 0px;
+	z-index: 9999;
+	opacity: 0;
+	display: none;
+	background-color: #D3D3D3;
+}
+
+#routingManner {
+	position: absolute;
+	left: 5%;
+	top: 0;
+	z-index: 9999;
+}
+
+#scale {
+	position: absolute;
+	left: 5px;
+	bottom: 30px;
+	z-index: 1010;
+	border: 1px solid black;
+	padding: 0px 2px;
+}
+
+#layerCtrl {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 1010;
+}
+
+#tmc-des {
+	display: none;
+	position: absolute;
+	height: 100px;
+	width: 300px;
+	left: 5px;
+	bottom: 60px;
+	z-index: 1010;
+}

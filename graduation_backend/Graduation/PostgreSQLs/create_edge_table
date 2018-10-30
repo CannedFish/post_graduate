@@ -1,0 +1,18 @@
+﻿CREATE TABLE edges (
+	gid_cname integer,
+        source integer, -- or bigint
+        target integer, -- or bigint
+        geo_cname geometry
+);
+ALTER TABLE edges
+	ADD COLUMN cost_len double precision,
+	ADD COLUMN cost_time double precision,
+	ADD COLUMN rcost_len double precision,
+	ADD COLUMN rcost_time double precision,
+	ADD COLUMN x1 double precision,
+	ADD COLUMN y1 double precision,
+	ADD COLUMN x2 double precision,
+	ADD COLUMN y2 double precision,
+	ADD COLUMN to_cost double precision,
+	ADD COLUMN rule text,
+	ADD COLUMN isolated integer;
